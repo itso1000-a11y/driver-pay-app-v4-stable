@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 
 
 type Lang = "en" | "bg";
-const APP_VERSION = "v4.37.33";
+const APP_VERSION = "v4.37.35";
 const LANGUAGE_STORAGE_KEY = "driverPayV4_language";
 const ACTIVE_WEEK_STORAGE_KEY = "driverPayV4_activeSaturday";
 const CLOSED_WEEKS_STORAGE_KEY = "driverPayV4_closedWeeks";
@@ -627,7 +627,7 @@ function getLastCompletedWorkShiftInWeek(days: DayRecord[]): PreviousShiftAnchor
 }
 
 function readWeeklyRestCandidate(): WeeklyRestCandidate | null {
-  // Stable v4.37.33 recovery rule:
+  // Stable v4.37.35 recovery rule:
   // Weekly Rest bridge/candidate is disabled. It was an experimental helper
   // and must not affect Start suggestions or the Rest card in the golden base.
   return null;
